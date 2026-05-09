@@ -42,6 +42,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: py-hftbacktest -> target
       - name: Build wheels
         uses: PyO3/maturin-action@v1
         with:
@@ -80,6 +83,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: py-hftbacktest -> target
       - name: Build wheels
         uses: PyO3/maturin-action@v1
         with:
@@ -115,6 +121,9 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           architecture: ${{ matrix.platform.target }}
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: py-hftbacktest -> target
 #      - name: Install dependencies
 #        run: |
 #          choco install openssl
@@ -147,6 +156,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: py-hftbacktest -> target
       - name: Install dependencies
         run: |
           brew install openssl
