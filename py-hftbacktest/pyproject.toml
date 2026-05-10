@@ -3,8 +3,8 @@ requires = ["maturin~=1.7"]
 build-backend = "maturin"
 
 [project]
-name = "pm-hbtbacktest"
-description = "Deprecated. This package has moved to pm-hftbacktest."
+name = "pm-hftbacktest"
+description = "A high-frequency trading and market-making backtesting tool accounts for limit orders, queue positions, and latencies, utilizing full tick data for trades and order books."
 readme = "README.rst"
 authors = [{ name = "mileswangs", email = "wangshuosum@gmail.com" }]
 license = { file = "LICENSE" }

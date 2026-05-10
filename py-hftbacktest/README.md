@@ -9,5 +9,5 @@ maturin develop
 To install this package with pip from PyPI after publishing:
 
 ```
-pip install pm-hbtbacktest
+pip install pm-hftbacktest
 ```
