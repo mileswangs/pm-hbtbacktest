@@ -4,11 +4,11 @@ build-backend = "maturin"
 
 [project]
 name = "pm-hbtbacktest"
-description = "A high-frequency trading and market-making backtesting tool accounts for limit orders, queue positions, and latencies, utilizing full tick data for trades and order books."
+description = "Deprecated. This package has moved to pm-hftbacktest."
 readme = "README.rst"
 authors = [{ name = "mileswangs", email = "wangshuosum@gmail.com" }]
 license = { file = "LICENSE" }
-version = "1.0.3"
+version = "1.0.4"
 requires-python = ">=3.11"
 dependencies = [
  "numpy >=2.0, <2.3",
